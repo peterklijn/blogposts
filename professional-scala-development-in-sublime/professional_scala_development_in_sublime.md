@@ -1,9 +1,9 @@
 # Professional Scala development in Sublime
 
 
-When I started programming in Scala, I started of in IntelliJ. Why shouldn't you? Everybody uses it, or at least my direct collegues at Xebia, and is has so many features, it is so powerfull. Why would you ever want anything else?
+When I started programming in Scala, I started off in IntelliJ. Why shouldn't you? Everybody uses it, or at least my direct collegues at Xebia, and is has so many features, it is so powerfull. Why would you ever want anything else?
 
-What quickly surprised me was how much such an expensive piece of software could annoy me. Yes its not the best looking tool out there, but with all the upsides it has, I'm willing to take that for granted. But man it is so insanely slow, it drove me crazy. It made my brand new top of the line MacBook feel like a slow turd. And yes I increased both the heap and stack memory limitation to far beyond reasonible. But still the random freezes, especially when it comes to the right mouse clicks, are just to cry for.
+What quickly surprised me was how much such an expensive piece of software could annoy me. Yes its not the best looking tool out there, but with all the upsides it has, I'm willing to take that for granted. But man it is so insanely slow, it drove me crazy. It made my brand new top of the line MacBook feel like a slow turd. And yes I increased both the heap and stack memory limitation to far beyond reasonable. But still the random freezes, especially when it comes to the right mouse clicks, are just to cry for.
 
 And whats up with redifining every single shortcut instead of using the operating system's defaults. You know what, I'm just gonna stop here, I can go on and on about IntelliJ.. Time had come to look for alternatives. It doesn't take you long to find some website recommending Eclipse, but it kind of feels like their single goal was to make it even uglier then IntelliJ, and the clearly made that goal, goodbye Eclipse.
 
@@ -59,15 +59,17 @@ With Package Control in place, `cmd+shift+p` to open the Command Palette and typ
 - [ScalaFormat][subl-scalaformat]
 - [Sidebar enhancements][subl-sidebar]
 
-Wow, wait a second Peter, what's all this? No worries, I'll explain why you need these plugins, and if you then still decide you don't need them, no problem, it's a free world.
+> "Wow, wait a second Peter, what's all this?"
+
+No worries, I'll explain why you need these plugins, and if you then still decide you don't need them, no problem, it's a free world.
 
 **All Autocomplete:** 
 
-By default Sublime Text recognizes variables, classes and about everything else you type in your current document. So the next time you type it, it will try to auto complete it for you. Pretty need, but also a bit primitive as it is scoped to only your current document. All Autocomplete extends this range to all open tabs. Sublime does not understand Scala (or any other programming language) so can't intelligently suggest that someMethod is part of SomeClass and will always suggest someMethod if you type the first few letters. Therefor limiting the suggestions to all open tabs instead of your entire project is enough.
+By default Sublime Text recognizes variables, classes and about everything else you type in your current document. So the next time you type it, it will try to auto complete it for you. Pretty neat, but also a bit primitive as it is scoped to your current document only. All Autocomplete extends this range to all open tabs. Sublime does not understand Scala (or any other programming language) so can't intelligently suggest that someMethod is part of SomeClass and will always suggest someMethod if you type the first few letters. Therefore limiting the suggestions to all open tabs, instead of your entire project, is enough.
 
 **Case Conversion:** 
 
-In case you often switch between camelCase and snake_case and back (a.k.a. writing Spray JSON Marshallers) or whatever other scenario you can imagine. You must have come to the point that this feels like something that you shouldn't do by hand. Well luckily for you its only a little `ctrl+alt+c ctrl+alt+<letter of case you want>` away. Or just use the Command Palette (`cmd+shift+p`) and fuzzy search your case.
+In case you often switch between camelCase and snake_case and back (a.k.a. writing Spray JSON Marshallers) or whatever other scenario you can imagine, you must have come to the point that this feels like something that you shouldn't do by hand. Well luckily for you it's only a little `ctrl+alt+c ctrl+alt+<letter of case you want>` away. Or just use the Command Palette (`cmd+shift+p`) and fuzzy search your case.
 
 **FileDiffs:** 
 
@@ -110,7 +112,7 @@ Pretty slick, but how do you get back? Personally I don't like the default `ctrl
   }
 ]
 ```
-What did you say? You want to use the command + left mouse button just like in IntelliJ? Well, that's just not gonna happen. Command clicking is you're gateway to the beautiful world of multiline editing. But no worries, how about a compromise with `alt+click`? Simply add a new file named "Default (OSX).sublime-mousemap" next to the keymap file (`~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap`) with the following:
+What did you say? You want to use the command + left mouse button just like in IntelliJ? Well, that's just not gonna happen. Command clicking is you're gateway to the beautiful world of multiline editing. But no worries, how about a compromise with `alt+click`? Simply create a new file named "Default (OSX).sublime-mousemap" next to the keymap file (`~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap`) with the following:
 
 ```
 [
@@ -181,7 +183,7 @@ sublime.sbt
 
 Time to get creative, say you have two files. 'horse.scala' containing your horse case class and all it's properties, and your brand new 'stable.scala'. You want to use the power of this fancy 'AllAutocomplete' plugin but you don't want to go through the hassle of double clicking the 'horse.scala' file in your sidebar and then navigating back to 'stable.scala'. 
 
-You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+alt+down cmd+alt+up` to jump to the definition and jump right back where you were. This leaves the 'horse.scala' file open in your editor, therefor filling your autocomplete with all horse related fields and functions. If only everything in life was this easy..
+You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+alt+down cmd+alt+up` to jump to the definition and jump right back where you were. This leaves the 'horse.scala' file open in your editor, therefore filling your autocomplete with all horse related fields and functions. If only everything in life was this easy..
  
 ##### Getting a good workflow
 
@@ -189,7 +191,7 @@ Right now you might think, all is fine here, but how do I use this beautiful edi
 
 When developing, which you obviously do TDD or at least kind of TDD. Simply automatically run the tests that are related to the code that you're refactoring everytime you hit save by `~ testOnly path.to.code.AwesomeCodeSpec.scala`. Maybe use some wildcards `~ testOnly path.to.code.*`.
 
-Doing some massive refactoring, `~ compile` will be your best friend.
+Doing some massive refactoring? `~ compile` will be your best friend.
 
 Happy coding.
 
