@@ -21,15 +21,16 @@ There are a few things you need to do to make Sublime even more awesome and suit
 
 You need the [sbt-sublime][sbt-subl] plugin. Simply add/edit this file `~/.sbt/0.13/plugins/plugins.sbt` and add this line:
 
-```
+```sbt
 addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.1.0")
+
 
 ```
 (Don't forget an empty line after each plugin).
 
 Now in your project's root folder, add a new file `sublime.sbt`:
 
-```
+```sbt
 sublimeExternalSourceDirectoryParent <<= baseDirectory { base =>
   base / ".sublime"
 }
@@ -101,7 +102,7 @@ By default Sublime Text 3 supports 'Goto Definition' which as the name says, goe
 
 Pretty slick, but how do you get back? Personally I don't like the default `ctrl+-` keybinding, and since you're probably not gonna use the default behaviour of `cmd+alt+up`, let's override it. Via the menu, go to 'Sublime Text' > 'Preferences' > 'Key Bindings - User' or edit `~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap` (if you're in OSX) and add the following:
 
-```
+```json
 [
   {
     "keys": ["super+alt+up"],
@@ -111,7 +112,7 @@ Pretty slick, but how do you get back? Personally I don't like the default `ctrl
 ```
 What did you say? You want to use the command + left mouse button just like in IntelliJ? Well, that's just not gonna happen. Command clicking is you're gateway to the beautiful world of multiline editing. But no worries, how about a compromise with `alt+click`? Simply create a new file named "Default (OSX).sublime-mousemap" next to the keymap file (`~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap`) with the following:
 
-```
+```json
 [
   {
     "button": "button1",
@@ -134,7 +135,7 @@ There are a lot of ways to find what you're looking for:
 
 Still haven't found what you're looking for? `cmd+shift+f` will help you out. But before you do, it might become time to exclude some folders. Go to your product's '<projectname>.sublime-project' file and add the 'folder_exclude_patterns' line with the folders you want to exclude, I think this will be a good start.
 
-```
+```json
 {
   "folders":[{
     "path":"/path/to/your/project",
