@@ -1,13 +1,10 @@
 # Professional Scala development in Sublime
 
-
 When I started programming in Scala, I started off in IntelliJ. Why shouldn't you? Everybody uses it, or at least my direct collegues at Xebia, and is has so many features, it is so powerfull. Why would you ever want anything else?
 
-What quickly surprised me was how much such an expensive piece of software could annoy me. Yes its not the best looking tool out there, but with all the upsides it has, I'm willing to take that for granted. But man it is so insanely slow, it drove me crazy. It made my brand new top of the line MacBook feel like a slow turd. And yes I increased both the heap and stack memory limitation to far beyond reasonable. But still the random freezes, especially when it comes to the right mouse clicks, are just to cry for.
+What quickly surprised me was how much it was able to annoy me. It is not the best looking editor, but with all the upsides it has, I'm willing to take that for granted. The performance however, I find unexceptable. It made my brand new top of the line MacBook feel like a seven year old budget laptop. And yes, even after I increased both the heap and stack memory limitation to far beyond reasonable it constantly found reasons to randomly freese for periods which easily reached half a minute. And what's up with redifining every single shortcut instead of using the operation system's defaults?
 
-And whats up with redifining every single shortcut instead of using the operating system's defaults. You know what, I'm just gonna stop here, I can go on and on about IntelliJ.. Time had come to look for alternatives. It doesn't take you long to find some website recommending Eclipse, but it kind of feels like their single goal was to make it even uglier then IntelliJ, and the clearly made that goal, goodbye Eclipse.
-
-Then I heard about some collegues using Sublime Text, I used it for some hobby projects in RoR, Python and PHP and absolutely loved it, so why not use it for Scala. It can't compare with IDE's on feature level, but it is such a joy to work in, you just can't not fall in love with it.
+I'm just going to stop here, I can go on and on about what's wrong with IntelliJ, but for me it was clear an alternative was needed. Then I heard about some collegues using Sublime Text, I used it for some hobby projects in RoR, Python and PHP and absolutely loved it, so why not use it for Scala. It can't compare with IDE's on feature level, but it is such a joy to work in, you just can't not fall in love with it.
 
 ![Multiline editing][multiline-json].
 
