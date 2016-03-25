@@ -171,6 +171,7 @@ Time to get creative, say you have two files. 'horse.scala' containing your hors
 
 You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+alt+down cmd+alt+up` to jump to the definition and jump right back where you were. This leaves the 'horse.scala' file open in your editor, therefore filling your autocomplete with all horse related fields and functions. If only everything in life was this easy..
 
+![Creating a spray marshaller][multiline-marshaller]
 
 ## Getting a good workflow
 
@@ -192,7 +193,8 @@ Missing something in this post? Or have something to add to it? Let me know! Bet
 Ah, and in case you didn't figure it out yet, this post is very opinionated so there might still be a change that you don't agree with me, that's fine. But you're wrong. And I hate you.
 
 
-[multiline-json]: multiline-edit-json-640-2.gif "Multiline editing"
+[multiline-json]: json-multiline.gif "Multiline editing"
+[multiline-marshaller]: spray-marshalling-multiline.gif "Creating a spray marshaller"
 [sbt-subl]: https://github.com/orrsella/sbt-sublime
 
 [subl-package]: https://packagecontrol.io/installation
