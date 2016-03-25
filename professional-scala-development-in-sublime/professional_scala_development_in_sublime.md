@@ -195,7 +195,9 @@ Yes, it's requires some more thinking, but once you figure out how to use (and c
 
 ![Creating a spray marshaller][multiline-marshaller]
 
-Missing something in this post? Or have something to add to it? Let me know! Better yet, share it by posting a comment :)
+You may have heard of the Ensime project, which makes more Scala-specific features available to Sublime Text. While it sounds interesting, so far I haven't found the need to actually experiment with it, so I guess I'm already happy with Sublime Text without it.
+
+Missing something in this post? Let me know by posting a comment.
 
 Did you like this post? Check out [this blog][xebia-blog-scala-atom] about developing Scala in Atom!
 
