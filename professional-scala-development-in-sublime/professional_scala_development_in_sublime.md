@@ -192,10 +192,12 @@ I've been using Sublime for the last year non stop, and honestly never looked ba
 
 Missing something in this post? Or have something to add to it? Let me know! Better yet, share it by posting a comment :)
 
+Did you like this post? Check out [this blog][xebia-blog-scala-atom] about developing Scala in Atom!
+
 [multiline-json]: json-multiline.gif "Multiline editing"
 [multiline-marshaller]: spray-marshalling-multiline.gif "Creating a spray marshaller"
-[sbt-subl]: https://github.com/orrsella/sbt-sublime
 
+[sbt-subl]: https://github.com/orrsella/sbt-sublime
 [subl-package]: https://packagecontrol.io/installation
 [subl-allauto]: https://packagecontrol.io/packages/All%20Autocomplete
 [subl-caseconv]: https://packagecontrol.io/packages/Case%20Conversion
@@ -206,3 +208,4 @@ Missing something in this post? Or have something to add to it? Let me know! Bet
 [subl-scalaformat]: https://packagecontrol.io/packages/ScalaFormat
 [subl-sidebar]: https://packagecontrol.io/packages/SideBarEnhancements
 
+[xebia-blog-scala-atom]: http://blog.xebia.com/scala-development-atom-editor/
