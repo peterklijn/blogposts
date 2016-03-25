@@ -12,12 +12,12 @@ I'm just going to stop here, I can go on and on about what's wrong with IntelliJ
 
 Well, 1.765 to be exact, but yes I did. But it's not that big of a deal in Sublime land. And this is just barely touching the surface. The thing with Sublime is, it is way more powerful then you would imagine it to be, they just kind of hid it away a bit.
 
-### Time to begin
+## Time to begin
 
 
 There are a few things you need to do to make Sublime even more awesome and suited for Scala, so let's get started.
 
-##### SBT
+### SBT
 
 You need the [sbt-sublime][sbt-subl] plugin. Simply add/edit this file `~/.sbt/0.13/plugins/plugins.sbt` and add this line:
 
@@ -41,7 +41,7 @@ Then in SBT, run the following command: `gen-sublime`.
 
 This will create a sublime project and download all dependencies (and their dependencies) into the freshly created .sublime folder in your project root. Why the .sublime directory? Well by default all dependencies are saved in the target folder, but you might empty that every now and then and downloading all dependencies over and over is a waste of your time.
 
-##### Sublime plugins
+### Sublime plugins
 
 Alright, up to Sublime, let's start with the most important one, [Package Control][subl-package], the apt-get of Sublime so to say. Just follow their instructions, its pretty easy :).
 
@@ -93,7 +93,7 @@ Last but definitely not least, Sublime's context-menu (right mouse button) is pr
 Hold your horses, we're not there yet. There's more to come. Let's make your life even better with some minor Sublime tweaks, tips & tricks.
 
 
-##### Sublime tweaks, tips & tricks
+### Sublime tweaks, tips & tricks
 
 **File jumping:**
 
@@ -171,7 +171,7 @@ Time to get creative, say you have two files. 'horse.scala' containing your hors
 You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+alt+down cmd+alt+up` to jump to the definition and jump right back where you were. This leaves the 'horse.scala' file open in your editor, therefore filling your autocomplete with all horse related fields and functions. If only everything in life was this easy..
 
 
-##### Getting a good workflow
+## Getting a good workflow
 
 Right now you might think, all is fine here, but how do I use this beautiful editor, I do not have a 'run program' button. True, you don't. It's a bit personal from here I guess, but what works for me having the good old terminal, no scratch that, iTerm, on your second display with SBT open. 
 
@@ -182,7 +182,7 @@ Doing some massive refactoring? `~ compile` will be your best friend.
 Happy coding.
 
 
-###Conclusion
+##Conclusion
 
 So, that brings us to the conclusion already. I've been using Sublime for the last 5 months non stop, and honestly never looked back at IntelliJ a single time. Yes, it's requires some more thinking, you have to use that big brain of yours to manage imports, which might feel like a burden at the beginning, but after a while you'll start noticing that you actually understand where things come from and start understanding how and why things work. Pretty slick side effect of using Sublime if you ask me.
 
