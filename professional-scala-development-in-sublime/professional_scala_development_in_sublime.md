@@ -6,7 +6,7 @@ What quickly surprised me was how much it was able to annoy me. It is not the be
 
 I'm just going to stop here, I can go on and on about what's wrong with IntelliJ, but for me it was clear an alternative was needed. Then I heard about some collegues using Sublime Text, I used it for some hobby projects in RoR, Python and PHP and absolutely loved it, so why not use it for Scala. It can't compare with IDE's on feature level, but it is such a joy to work in, you just can't not fall in love with it.
 
-![Multiline editing][multiline-json].
+![Multiline editing][multiline-json]
 
 > "What just happened? Did you just edit 1.700 lines simultaneously in a 40.000+ lines big json file?"
 
@@ -22,7 +22,7 @@ There are a few things you need to do to make Sublime even more awesome and suit
 You need the [sbt-sublime][sbt-subl] plugin. Simply add/edit this file `~/.sbt/0.13/plugins/plugins.sbt` and add this line:
 
 ```sbt
-addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.1.0")
+addSbtPlugin("com.orrsella" % "sbt-sublime" % "1.1.1")
 
 
 ```
@@ -185,7 +185,6 @@ When developing, which you obviously do TDD or at least kind of TDD. Simply auto
 Doing some massive refactoring? `~ compile` will be your best friend.
 
 Happy coding.
-
 
 ##Conclusion
 
