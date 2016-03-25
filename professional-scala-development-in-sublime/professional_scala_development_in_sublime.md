@@ -44,9 +44,9 @@ This will create a sublime project and download all dependencies (and their depe
 
 ### Sublime plugins
 
-Alright, up to Sublime, let's start with the most important one, [Package Control][subl-package], the apt-get of Sublime so to say. Just follow their instructions, its pretty easy :).
+Next up, Sublime, let's start with the most important one, [Package Control][subl-package], the apt-get of Sublime so to say. Just follow their instructions, its pretty easy :).
 
-With Package Control in place, `cmd+shift+p` to open the Command Palette and type "Pack Inst" to fuzzy search for 'Package Control: Install Package'. Give it a sec or two to download it's list of packages and one by one, install all these:
+After installation, you can use the build-in Command Palette which can be found by pressing `cmd+shift+p`. From there on, just fuzzy search for the command you want, like 'Package Control: Install Package' to install a single package. But for now, let's go for the 'Package Control: Advanced Install Package', give it a second or two to download it's list of packages and then comma seperated add this list of packages:
 
 - [All Autocomplete][subl-allauto]
 - [Case Conversion][subl-caseconv]
@@ -110,7 +110,10 @@ Pretty slick, but how do you get back? Personally I don't like the default `ctrl
   }
 ]
 ```
-What did you say? You want to use the command + left mouse button just like in IntelliJ? Well, that's just not gonna happen. Command clicking is you're gateway to the beautiful world of multiline editing. But no worries, how about a compromise with `alt+click`? Simply create a new file named "Default (OSX).sublime-mousemap" next to the keymap file (`~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap`) with the following:
+
+What did you say? You want to use the command + left mouse button to jump to definition, just like in IntelliJ? Well, that's just not gonna happen. Command clicking is you're gateway to the beautiful world of multiline editing. But no worries, how about a compromise with `alt+click`?
+
+Simply create a new file named "Default (OSX).sublime-mousemap" next to the keymap file (`~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap`) with the following:
 
 ```json
 [
@@ -161,7 +164,7 @@ There are so many ways to multiline edit in Sublime, it is kind of impossible to
 - `cmd+alt+leftmousebutton` will enable you to drag a selection and place a cursor on every line
 - `cmd+shift+l` will put a cursor on every line you have selected.
 - `cmd+l` will select the entire line where your cursor(s) is/are on.
-- and `cmd+leftmousebutton` will simply add another cursor.
+- `cmd+leftmousebutton` will simply add another cursor.
 
 And all of these get even better when you start combining them. Soon you'll wonder how you ever lived without it.
 
@@ -175,7 +178,7 @@ You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+al
 
 ## Getting a good workflow
 
-Right now you might think, all is fine here, but how do I use this beautiful editor, I do not have a 'run program' button. True, you don't. It's a bit personal from here I guess, but what works for me having the good old terminal, no scratch that, iTerm, on your second display with SBT open. 
+Right now you might think, all is fine here, but how do I use this beautiful editor, I do not have a 'run program' button. True, you don't. It comes down to personal preference ofcourse, but what works for me having the good old terminal, no scratch that, iTerm, on your second display with SBT open.
 
 When developing, which you obviously do TDD or at least kind of TDD. Simply automatically run the tests that are related to the code that you're refactoring everytime you hit save by `~ testOnly path.to.code.AwesomeCodeSpec.scala`. Maybe use some wildcards `~ testOnly path.to.code.*`.
 
@@ -186,12 +189,9 @@ Happy coding.
 
 ##Conclusion
 
-So, that brings us to the conclusion already. I've been using Sublime for the last 5 months non stop, and honestly never looked back at IntelliJ a single time. Yes, it's requires some more thinking, you have to use that big brain of yours to manage imports, which might feel like a burden at the beginning, but after a while you'll start noticing that you actually understand where things come from and start understanding how and why things work. Pretty slick side effect of using Sublime if you ask me.
+I've been using Sublime for the last year non stop, and honestly never looked back at IntelliJ a single time. Yes, it's requires some more thinking, you have to use that big brain of yours to manage imports, which might feel like a burden at the beginning, but after a while you'll start noticing that you actually understand where things come from and start understanding how and why things work. Pretty slick side effect of using Sublime if you ask me.
 
 Missing something in this post? Or have something to add to it? Let me know! Better yet, share it by posting a comment :)
-
-Ah, and in case you didn't figure it out yet, this post is very opinionated so there might still be a change that you don't agree with me, that's fine. But you're wrong. And I hate you.
-
 
 [multiline-json]: json-multiline.gif "Multiline editing"
 [multiline-marshaller]: spray-marshalling-multiline.gif "Creating a spray marshaller"
