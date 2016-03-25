@@ -8,9 +8,9 @@ I'm just going to stop here, I can go on and on about what's wrong with IntelliJ
 
 ![Multiline editing][multiline-json].
 
-> "What just happened? Did you just edit 1.700 lines simultaneously in a 40.000+ lines big json file?" 
+> "What just happened? Did you just edit 1.700 lines simultaneously in a 40.000+ lines big json file?"
 
-Well, 1.765 to be exact, but yes I did. But it's not that big of a deal in Sublime land. And this is just barely touching the surface, the thing with Sublime is, it is way more powerful then you'd imagine it to be, they just kind of hid it away a bit.
+Well, 1.765 to be exact, but yes I did. But it's not that big of a deal in Sublime land. And this is just barely touching the surface. The thing with Sublime is, it is way more powerful then you would imagine it to be, they just kind of hid it away a bit.
 
 ### Time to begin
 
@@ -37,7 +37,7 @@ sublimeExternalSourceDirectoryParent <<= baseDirectory { base =>
 sublimeTransitive := true
 ```
 
-Then in SBT, run the following command: `gen-sublime`. 
+Then in SBT, run the following command: `gen-sublime`.
 
 This will create a sublime project and download all dependencies (and their dependencies) into the freshly created .sublime folder in your project root. Why the .sublime directory? Well by default all dependencies are saved in the target folder, but you might empty that every now and then and downloading all dependencies over and over is a waste of your time.
 
@@ -60,31 +60,31 @@ With Package Control in place, `cmd+shift+p` to open the Command Palette and typ
 
 No worries, I'll explain why you need these plugins, and if you then still decide you don't need them, no problem, it's a free world.
 
-**All Autocomplete:** 
+**All Autocomplete:**
 
 By default Sublime Text recognizes variables, classes and about everything else you type in your current document. So the next time you type it, it will try to auto complete it for you. Pretty neat, but also a bit primitive as it is scoped to your current document only. All Autocomplete extends this range to all open tabs. Sublime does not understand Scala (or any other programming language) so can't intelligently suggest that someMethod is part of SomeClass and will always suggest someMethod if you type the first few letters. Therefore limiting the suggestions to all open tabs, instead of your entire project, is enough.
 
-**Case Conversion:** 
+**Case Conversion:**
 
 In case you often switch between camelCase and snake_case and back (a.k.a. writing Spray JSON Marshallers) or whatever other scenario you can imagine, you must have come to the point that this feels like something that you shouldn't do by hand. Well luckily for you it's only a little `ctrl+alt+c ctrl+alt+<letter of case you want>` away. Or just use the Command Palette (`cmd+shift+p`) and fuzzy search your case.
 
-**FileDiffs:** 
+**FileDiffs:**
 
 This might come as a total surpise, but this sweet plugin compares files. Nicely integrated in Sublime by rightclicking a tab or file in your sidebar and compare it to another file, open tab, or whatever else it is you fancy comparing.
 
-**Git** and **GitGutter:** 
+**Git** and **GitGutter:**
 
 Git brings you Git commands in your sublime which might just come in handy every ones in a while. GitGutter shows you icons per line to indicate which lines have been inserted, modified or deleted.
 
-**Pretty JSON:** 
+**Pretty JSON:**
 
 Open a JSON file or paste your JSON into an empty file and press `ctrl+cmd+j` or fuzzy search the command palette for 'Pretty JSON: Format (pretty print) JSON' and out comes beautifully aligned and highlighted JSON. And if it doesn't work, your JSON is invalid.
 
-**ScalaFormat:** 
+**ScalaFormat:**
 
 Format your scala code using Scalariform by `ctrl+alt+f`, simple as that.
 
-**Sidebar enhancements:** 
+**Sidebar enhancements:**
 
 Last but definitely not least, Sublime's context-menu (right mouse button) is pretty basic. Sidebar enhancements brings just about everything you'd want from a sidebar, in your sidebar.
 
@@ -95,7 +95,7 @@ Hold your horses, we're not there yet. There's more to come. Let's make your lif
 
 ##### Sublime tweaks, tips & tricks
 
-**File jumping:** 
+**File jumping:**
 
 By default Sublime Text 3 supports 'Goto Definition' which as the name says, goes to the definition of whatever it is your cursor is on. Simply press `cmd+alt+down` and if Sublime can find it, it will take you there. If it finds multiple hits, it will show you a the results in a list which you can simply quickview by pressing the up and down arrows.
 
@@ -124,11 +124,11 @@ What did you say? You want to use the command + left mouse button just like in I
 
 ```
 
-**Searching:** 
+**Searching:**
 
-There are a lot of ways to find what you're looking for: 
+There are a lot of ways to find what you're looking for:
 
-- `cmd+p` will fuzzy search all files in your project (and dependencies). 
+- `cmd+p` will fuzzy search all files in your project (and dependencies).
 - `cmd+r` will fuzzy search all classes, methods and variables in your current file.
 - `cmd+shift+r` will fuzzy search all classes and methods in your project (and dependencies).
 
@@ -147,11 +147,11 @@ Still haven't found what you're looking for? `cmd+shift+f` will help you out. Bu
 
 Now simply start searching, put <project> in the Where column to look through your entire project. Btw, `cmd+alt+r` will toggle the Regex trigger when in search, in case you feel you need some more control over your searches.
 
-**Paste history:** 
+**Paste history:**
 
 Chances are you will never find this if nobody tells you, but Sublime remembers the last few things you copied, simply press `cmd+k+v` and sublime will present you a dropdown with the last few clipboard items (which were copied in Sublime).
 
-**Multiline editing:** 
+**Multiline editing:**
 
 There are so many ways to multiline edit in Sublime, it is kind of impossible to not use it.
 
