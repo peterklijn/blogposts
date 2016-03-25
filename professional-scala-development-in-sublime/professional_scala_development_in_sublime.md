@@ -164,24 +164,13 @@ There are so many ways to multiline edit in Sublime, it is kind of impossible to
 
 And all of these get even better when you start combining them. Soon you'll wonder how you ever lived without it.
 
-**Git ignore:** 
+**Using file jumping for autocompletion:**
 
-You ofcourse don't want all this sublime magic leaking into your git repo, so add the following to your '.gitignore' file:
-
-```
-# Sublime specific
-sublime.sbt
-*.sublime
-*.sublime-project
-*.sublime-workspace
-```
-
-**Using file jumping for autocompletion:** 
-
-Time to get creative, say you have two files. 'horse.scala' containing your horse case class and all it's properties, and your brand new 'stable.scala'. You want to use the power of this fancy 'AllAutocomplete' plugin but you don't want to go through the hassle of double clicking the 'horse.scala' file in your sidebar and then navigating back to 'stable.scala'. 
+Time to get creative, say you have two files. 'horse.scala' containing your horse case class and all it's properties, and your brand new 'stable.scala'. You want to use the power of this fancy 'AllAutocomplete' plugin but you don't want to go through the hassle of double clicking the 'horse.scala' file in your sidebar and then navigating back to 'stable.scala'.
 
 You don't have to. Once you typed 'Horse' in your 'stable.scala', simply `cmd+alt+down cmd+alt+up` to jump to the definition and jump right back where you were. This leaves the 'horse.scala' file open in your editor, therefore filling your autocomplete with all horse related fields and functions. If only everything in life was this easy..
- 
+
+
 ##### Getting a good workflow
 
 Right now you might think, all is fine here, but how do I use this beautiful editor, I do not have a 'run program' button. True, you don't. It's a bit personal from here I guess, but what works for me having the good old terminal, no scratch that, iTerm, on your second display with SBT open. 
